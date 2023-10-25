@@ -9,6 +9,6 @@ use Infrastructure\Symfony\ViewModel\Example;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
-class TestController extends AbstractController
+class ExampleController extends AbstractController
 {
 }

@@ -9,9 +9,11 @@ use Domain\Entity\Example;
 
 class ListExample
 {
+    private ExampleFinder $finder;
     public function __construct(
         ExampleFinder $finder
     ) {
+        $this->finder = $finder;
     }
 
     /** @return Example[] */
