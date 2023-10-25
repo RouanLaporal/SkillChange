@@ -7,5 +7,5 @@
 /public/bundles/
 /var/
 /vendor/
-###< symfony/framework-bundle ###
 /.env
+###< symfony/framework-bundle ###
