@@ -1,0 +1,18 @@
+App\Domain\Entity\User:
+  type: entity
+  # repositoryClass: App\Infrastructure\Post\Repository\DoctrinePostRepository
+  table: user
+  id:
+    id:
+      type: uuid
+      unique: true
+  fields:
+    email:
+      type: string
+      length: 100
+    name:
+      type: string
+      length: 100
+    skills:
+      type: json
+      nullable: true
