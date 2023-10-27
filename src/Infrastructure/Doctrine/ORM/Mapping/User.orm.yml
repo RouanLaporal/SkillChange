@@ -1,4 +1,4 @@
-App\Domain\Entity\User:
+Domain\Entity\User:
   type: entity
   # repositoryClass: App\Infrastructure\Post\Repository\DoctrinePostRepository
   table: user
@@ -13,6 +13,3 @@ App\Domain\Entity\User:
     name:
       type: string
       length: 100
-    skills:
-      type: json
-      nullable: true
