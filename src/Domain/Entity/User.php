@@ -8,10 +8,13 @@ class User
 {
     private string $name;
     private string $email;
-    public function __construct(string $name, string $email)
+    private array $skills;
+
+    public function __construct(string $name, string $email, $skills)
     {
         $this->name = $name;
         $this->email = $email;
+        $this->skills = $skills;
     }
 
     public function getName(): string
@@ -22,5 +25,10 @@ class User
     public function getEmail(): string
     {
         return $this->email;
+    }
+
+    public function getSkills(): array
+    {
+        return $this->skills;
     }
 }
