@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Domain\Entity;
 
-use Symfony\Component\Uid\Uuid;
+
 
 
 class User
 {
-    private Uuid $id;
+    private $id;
     private string $name;
     private string $email;
     // private array $skills;
 
-    public function __construct(Uuid $id, string $name, string $email, $skills)
+    public function __construct($id, string $name, string $email, $skills)
     {
         $this->id = $id;
         $this->name = $name;
